@@ -57,7 +57,7 @@ model = PlantDiseaseCNN()
 Define loss and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-# Train for 5 epochs
+Train for 5 epochs
 
 # 3️⃣ Train the ResNet (Transfer Learning)
 from torchvision import models
