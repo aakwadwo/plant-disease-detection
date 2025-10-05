@@ -69,7 +69,7 @@ plt.plot(train_losses, label='Training Loss')
 plt.plot(val_accuracies, label='Validation Accuracy')
 plt.title('Training Progress')
 
-##🧠 Key Concepts Learned
+## 🧠 Key Concepts Learned
 Image preprocessing with PyTorch Transforms
 Dataset management using ImageFolder and DataLoader
 Designing and training a CNN from scratch
