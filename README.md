@@ -49,22 +49,22 @@ Tomato_YellowLeaf__Curl_Virus
 
 ## 🚀 How to Run
 
-# 1️⃣ Open in Google Colab
+### 1️⃣ Open in Google Colab
 You can run this project easily in **Google Colab** with GPU enabled.
 
-# 2️⃣ Train the CNN
+### 2️⃣ Train the CNN
 model = PlantDiseaseCNN()
 Define loss and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 Train for 5 epochs
 
-# 3️⃣ Train the ResNet (Transfer Learning)
+### 3️⃣ Train the ResNet (Transfer Learning)
 from torchvision import models
 resnet = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
 Freeze feature layers, fine-tune final FC layer
 
-# 4️⃣ Evaluate and Visualize
+### 4️⃣ Evaluate and Visualize
 plt.plot(train_losses, label='Training Loss')
 plt.plot(val_accuracies, label='Validation Accuracy')
 plt.title('Training Progress')
